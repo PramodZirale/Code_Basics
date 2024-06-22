@@ -31,7 +31,7 @@ d) set
 print(format(145, 'o'))
 
 
-#There is a circular pond in a village. This pond has a radius of 84 meters. Can you find the area of the pond? 
+#There is a circular pond in a village. This pond has a radius of 84 meters. Can you find the area of the pond? Circle Area = πr2
 area = 3.14 * 84 * 84
 print(area)
 
@@ -44,3 +44,13 @@ water_per_square_meter = 1.4  # Liters of water per square meter
 total_water = area * water_per_square_meter
 
 print(total_water)
+
+# If you cross a 490-meter-long street in 7 minutes, then what is your speed in meters per second? Print your answer without any decimal point in it.
+# Hint:**
+# Speed = Distance / Time
+
+speed = 490 / 7;
+print(int(speed))
+
+
+
