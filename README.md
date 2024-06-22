@@ -1,10 +1,8 @@
-# Code_Basics
 # Python Basics Repository
 
 Welcome to the Python Basics Repository! This repository is designed to help you learn Python by providing daily updates with new concepts and examples. Follow the instructions below to get started and make the most of this resource.
 
 ## Table of Contents
-- [Code\_Basics](#code_basics)
 - [Python Basics Repository](#python-basics-repository)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
