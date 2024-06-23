@@ -1,3 +1,60 @@
+""" 
+Q1. What will happen when you run this code?
+
+person_info = ("bob gupta", 52, "1 free street, mumbai")
+person_info[1] = 54
+
+A) It will assign 54 value to second element in the tuple
+
+B) You will get an error because tuples are immutable
+
+C) It will assign 54 to the first element in the tuple
+
+D) Bob gupta will take you to the court for modifying his age
+
+Q2. What is the purpose of the items() function in a Python dictionary?
+
+A) Returns an array of dictionary keys
+
+B) Returns an array of dictionary values
+
+C) items() is an invalid function for a dictionary
+
+D) To iterate through every item of a dictionary and get key, value in each iteration
+
+Q3. The following dictionary contains salaries based on skill and experience level. 
+Which statement can retrieve a senior PHP engineer's salary?
+
+salaries = {
+    'python': { 'junior': '100k', 'senior': '600k' },
+    'php': { 'junior': '70k', 'senior': '400k' },
+    'java': { 'junior': '80k', 'senior': '500k' },
+}
+
+A) salaries['php']['senior']
+
+B) salaries['senior']['php']
+
+C) You can't retrieve salaries as they are confidential
+
+D) salaries('php')('senior')
+
+Q4. What is the output of the following?
+
+d = {'Luke': 1994, 'Boba': 1989, 'Kyle': 1998, 'Hann': 1993}
+print(d['Boba' : 'Kyle'])
+
+A) [1989, 1998]
+
+B) (1989, 1998)
+
+C) It raises an Error
+
+D) 1989
+
+"""
+
+
 # diff between  tuples & list
 # tuple is immutable and list is mutable
 # user case of tuple is when you want to make sure that the data is not changed like returning multiple values from a function
@@ -101,4 +158,4 @@ print(list(d.values()))
 print(list(d.items()))
 
 
-
+print(d['jane': 'smith'])
