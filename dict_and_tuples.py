@@ -87,6 +87,8 @@ print(e['ravi']['phone']) # 8867676767
 print(e['ravi']['email']) # p@g.com
 
 
+for phone , email in  e.values():
+    print(phone['phone'])
 
 
 
