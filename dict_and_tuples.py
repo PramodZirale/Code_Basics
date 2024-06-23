@@ -87,10 +87,18 @@ print(e['ravi']['phone']) # 8867676767
 print(e['ravi']['email']) # p@g.com
 
 
-for phone , email in  e.values():
-    print(phone['phone'])
 
+for name in d:
+    print(name, d[name])
 
+for name , number in d.items():
+    print(name, number)
+
+print(dir(d)) # to get all the methods of the dictionary
+
+print(list(d.keys()))
+print(list(d.values()))
+print(list(d.items()))
 
 
 
