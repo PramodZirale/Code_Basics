@@ -30,7 +30,7 @@ print(pe_ratio, pb_ratio)
 # dictionary is nested
 # dictionary is iterable
 
-#study big o notation very important concept in data structures and algorithms in youtube
+#study big o notation very important concept in data structures and algorithms in youtube  by dhaval patel
 
 # example without dict it will iterate through all the elements to find the value
 contacts = [('John Doe', 8867676767), ('Jane Doe', 7867676767), ('John Smith', 9867676767)]
@@ -41,7 +41,7 @@ for contact in contacts:
         break
     
 # example with dict it will directly go to the key and get the value
-# memory management is the only difference between dict and list - array in youtube
+# memory management is the only difference between dict and list - array in youtube  by dhaval patel
 
 d = {
     'ravi': 8867676767,
@@ -50,7 +50,45 @@ d = {
     'jane': 9867676767,
 }
 
+# read hash table in youtube by dhaval patel
+# if key is not present in the dictionary it will throw an error
 print(d['jane'])
+
+
+# if key is not present in the dictionary it will return None
+d.get('jane') # 9867676767
+d.get('jane1',0) # None , default value is 0
+
+#if want to add a new key value pair to the dictionary
+d['jane1'] = 7867676767
+print(d)
+
+#if want modify the value of a key in the dictionary
+d['jane1'] = 7867676768
+
+#if want to delete a key value pair from the dictionary
+del d['jane1']
+
+# if want to check if a key is present in the dictionary
+print('jane' in d) # True
+
+#in operator is used to check if a key is present in the dictionary
+#in operator is used to check if a value is present in the list
+
+
+e = {
+    'ravi': {'phone': 8867676767,'email': 'p@g.com'},
+    'john': {'phone': 7867676767,'email': 'j@g.com'},
+    'smith': {'phone': 9867676767,'email': 's@g.com'},
+    'jane': {'phone': 9867676767,'email': 'jj@g.com'},
+}
+
+print(e['ravi']['phone']) # 8867676767
+print(e['ravi']['email']) # p@g.com
+
+
+
+
 
 
 
