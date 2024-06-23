@@ -137,3 +137,31 @@ def master_yoda(sentence):
 
 print(master_yoda('I am home')) # 'home am I'
 
+
+# Write a function pay_bill which will take a list of expenses, percent commission, and a special offer amount
+
+# If you don’t pass percent_comission it should be always 9.8%
+
+# The Last argument special_offer_amount is not a required argument, you don’t need to pass it. Make it an optional parameter.
+
+# If you want to give a special offer to the user, then you have to pass the third argument special_offer_amount. 
+
+# If the user makes the purchase greater than special_offer_amount, then give him an extra commission of 1.2%.
+
+# Calculate the final payable price of the bill and return it from the function.
+
+def pay_bill(expenses, percent_commission=9.8, special_offer_amount=None):
+    """
+    Function to calculate the final payable price of the bill
+    :param expenses: list of expenses
+    :param percent_commission: percent commission
+    :param special_offer_amount: special offer amount
+    :return: final payable price of the bill
+    """
+    total_expenses = sum(expenses)
+    commission = total_expenses * percent_commission / 100
+    if special_offer_amount and total_expenses > special_offer_amount:
+        commission += total_expenses * 1.2 / 100
+    return total_expenses + commission
+
+print(pay_bill([100, 200, 300])) # 609.0
