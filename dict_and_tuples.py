@@ -158,4 +158,89 @@ print(list(d.values()))
 print(list(d.items()))
 
 
-print(d['jane': 'smith'])
+# print(d['jane': 'smith'])
+
+# Excercise
+
+# Create a list of your friends' names and now create a list of tuples. 
+# The tuple should contain the friend’s name and the length of the name. 
+# For Example: if someone’s name is Aditya, the tuple would be: (‘Aditya’, 6)
+friends = [('Pradnya', 7),('Kavita',6),('Pramod',6)]
+
+
+# You and your wife argued about expenses last night. You both want to know who is spending more in a month. 
+# Now you both go to the Little Yoda he is a good python programmer.
+# He suggested that both of you add an entry in a dictionary next time you spend money. 
+# So that you can have a clear picture of your expenses and plan to reduce them. Both dictionaries are as below-
+# Your expenses -
+
+# Clothes - 1100
+# Shoes - 1000
+# Watch - 900
+# Mobile Recharge - 699
+# Petrol - 1980
+
+# Your Wife’s expenses -
+
+# Mobile Recharge - 799
+# DTH recharge - 999
+# Clothes - 2310
+# Makeup - 3670
+# Shoes - 999
+# Find out the total expenses for each of you.
+# Find out who spending more
+# Find out which thing you and your wife spending more
+
+Pramod = {
+    "Clothes": 1100,
+    "Shoes": 1000,
+    "Watch": 900,
+    "Mobile Recharge": 699,
+    "Petrol": 1980
+}
+
+Pradnya = {
+    "Mobile Recharge": 799,
+    "DTH Recharge": 999,
+    "Clothes": 2310,
+    "Makeup": 3670,
+    "Shoes": 999
+}
+
+# Calculate total expenses for Pramod
+Pramod_Expense = sum(Pramod.values())
+
+# Calculate total expenses for Pradnya
+Pradnya_Expense = sum(Pradnya.values())
+
+# Determine who is spending more
+if Pramod_Expense > Pradnya_Expense:
+    spender = "Pramod"
+    higher_expense = Pramod_Expense
+else:
+    spender = "Pradnya"
+    higher_expense = Pradnya_Expense
+
+# Find the highest expense category for Pramod
+Pramod_Max_Spend_Category = max(Pramod, key=Pramod.get)
+Pramod_Max_Spend_Amount = Pramod[Pramod_Max_Spend_Category]
+
+# Find the highest expense category for Pradnya
+Pradnya_Max_Spend_Category = max(Pradnya, key=Pradnya.get)
+Pradnya_Max_Spend_Amount = Pradnya[Pradnya_Max_Spend_Category]
+
+# Print results
+print(f"Total expenses for Pramod: {Pramod_Expense}")
+print(f"Total expenses for Pradnya: {Pradnya_Expense}")
+print(f"{spender} is spending more with a total of {higher_expense}.")
+print(f"Pramod's highest spending is on {Pramod_Max_Spend_Category} with an amount of {Pramod_Max_Spend_Amount}.")
+print(f"Pradnya's highest spending is on {Pradnya_Max_Spend_Category} with an amount of {Pradnya_Max_Spend_Amount}.")
+
+    
+
+
+
+
+
+
+
