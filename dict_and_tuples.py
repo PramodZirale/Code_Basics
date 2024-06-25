@@ -224,10 +224,12 @@ else:
 # Find the highest expense category for Pramod
 Pramod_Max_Spend_Category = max(Pramod, key=Pramod.get)
 Pramod_Max_Spend_Amount = Pramod[Pramod_Max_Spend_Category]
+print(Pramod_Max_Spend_Amount)
 
 # Find the highest expense category for Pradnya
 Pradnya_Max_Spend_Category = max(Pradnya, key=Pradnya.get)
 Pradnya_Max_Spend_Amount = Pradnya[Pradnya_Max_Spend_Category]
+print(Pradnya_Max_Spend_Amount)
 
 # Print results
 print(f"Total expenses for Pramod: {Pramod_Expense}")
@@ -237,6 +239,8 @@ print(f"Pramod's highest spending is on {Pramod_Max_Spend_Category} with an amou
 print(f"Pradnya's highest spending is on {Pradnya_Max_Spend_Category} with an amount of {Pradnya_Max_Spend_Amount}.")
 
     
+# You are working on a project where you need to store the details of the students in a class.
+# You need to store the student's name, roll number, and marks in a dictionary.
 
 
 
