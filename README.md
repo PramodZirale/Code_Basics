@@ -12,7 +12,7 @@ Welcome to the Python Basics Repository! This repository is designed to help you
   - [Contact](#contact)
 
 ## Introduction
-This repository contains a collection of Python scripts and notes that cover fundamental concepts of Python programming. Each day, a new concept or example will be added to help you progressively build your Python skills.
+This repository contains a collection of Python scripts and notes that cover fundamental concepts of Python programming. Each day, a new concept or example will be added to help you progressively build your Python skills..
 
 ## Getting Started
 To start using this repository, follow these steps:
