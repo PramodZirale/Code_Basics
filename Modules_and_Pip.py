@@ -21,5 +21,7 @@ c. from calculate import multiply
 
 d. from multiply import calculate
    res = multiply(3, 5)
+   
+   
 
 """
