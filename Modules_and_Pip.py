@@ -48,6 +48,13 @@ jan = calendar.month(2020,1)
 
 print(jan)
 
+import pyroids
+# from pyroids import game
+                                                           
+dir (pyroids)
+
+# pyroids.launch()
+
 
 
 
