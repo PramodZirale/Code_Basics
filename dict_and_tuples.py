@@ -144,17 +144,22 @@ print(e['ravi']['phone']) # 8867676767
 print(e['ravi']['email']) # p@g.com
 
 
-
+# it is iterating through the dictionary and printing the key and value
 for name in d:
     print(name, d[name])
 
+#another way to iterate through the dictionary
 for name , number in d.items():
     print(name, number)
 
+# to get all the methods of the dictionary
 print(dir(d)) # to get all the methods of the dictionary
 
+# to get all the keys of the dictionary
 print(list(d.keys()))
+# to get all the values of the dictionary
 print(list(d.values()))
+# to get all the items of the dictionary
 print(list(d.items()))
 
 
@@ -164,7 +169,8 @@ print(list(d.items()))
 
 # Create a list of your friends' names and now create a list of tuples. 
 # The tuple should contain the friend’s name and the length of the name. 
-# For Example: if someone’s name is Aditya, the tuple would be: (‘Aditya’, 6)
+# For Example: if someone’s name is Adit12
+# ya, the tuple would be: (‘Aditya’, 6)
 friends = [('Pradnya', 7),('Kavita',6),('Pramod',6)]
 
 
@@ -241,6 +247,7 @@ print(f"Pradnya's highest spending is on {Pradnya_Max_Spend_Category} with an am
     
 # You are working on a project where you need to store the details of the students in a class.
 # You need to store the student's name, roll number, and marks in a dictionary.
+
 
 
 

@@ -13,7 +13,10 @@ Suppose you have created a multiply() function in a file calculate.py. You need 
 a. import calculate
    res = calculate.multiply(3, 5)
 
-b. import calculate 
+b. import calculate +
+
+
+
    res = multiply(3, 5)
 
 c. from calculate import multiply
@@ -25,3 +28,27 @@ d. from multiply import calculate
    
 
 """
+import math
+
+squaroot = math.sqrt(16)
+print(squaroot)
+
+power = math.pow(2,3)
+print(power)
+
+print(math.pi)
+
+print(math.log10(3))
+
+import calendar
+
+print(calendar.isleap(2020))
+
+jan = calendar.month(2020,1)
+
+print(jan)
+
+
+
+
+
