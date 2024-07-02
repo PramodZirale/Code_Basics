@@ -29,7 +29,7 @@ To start using this repository, follow these steps:
 
 3. **Pull daily updates**:
     ```bash
-    git pull origin main
+    git pull origin main .
     ```
 
 Make sure to pull the latest changes every day to stay up-to-date with new content.
