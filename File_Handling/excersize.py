@@ -7,3 +7,6 @@
 # Create a new file and write this information to the new file
 # (https://www.kaggle.com/arunkumar413/student-marks)
 
+with open("student_marks.csv","r") as s:
+    student_data = s.readlines()
+    print(student_data)
