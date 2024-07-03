@@ -10,3 +10,16 @@
 with open("student_marks.csv","r") as s:
     student_data = s.readlines()
     print(student_data)
+    
+headers = student_data[0].strip().split(",")
+
+student_details = []
+
+for student in student_data[1:]:
+    student = student.strip().split(",")
+    row_dict = dict(zip(headers, student))
+    student_details.append(row_dict)
+    
+print(student_details)  
+    
+    
