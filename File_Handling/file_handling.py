@@ -43,7 +43,7 @@ with open("scores.csv", "r") as f:
         if player in player_score:
             player_score[player].append(score)
         else:
-            player_score[player] = [score]
+            player_score[player] = [score]         
             
 print(player_score)
 
