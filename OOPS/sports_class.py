@@ -27,7 +27,7 @@ class CricketPalyer:
         return self.get_score_sum() > other.get_score_sum()
     
     def __str__(self):
-        return f'{self.first_name} {self.last_name} {self.team} {self.birth_year}'
+        return f'{self.first_name} {self.last_name},the cricket player of {self.team} team born in {self.birth_year}'
     
     def __repr__(self):
         return f'{self.first_name} {self.last_name} {self.team} {self.birth_year}'
@@ -99,5 +99,12 @@ print(virat // yuvraj)
 print(virat % yuvraj)
 print(virat<yuvraj)
 print(virat>yuvraj)
+
+# __str__ and __repr__ method
+print(virat)
+print(yuvraj)
+
+#use of __repr__ method
+print([virat,yuvraj])
 
 
