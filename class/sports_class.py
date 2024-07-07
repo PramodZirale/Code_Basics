@@ -17,6 +17,47 @@ class CricketPalyer:
     def get_avg_score(self):
             return self.get_score_sum() / len(self.scores) 
         
+    def __lt__ (self, other):
+        return self.get_score_sum() < other.get_score_sum()
+    
+    def __eq__ (self, other):
+        return self.get_score_sum() == other.get_score_sum()
+    
+    def __gt__ (self, other):
+        return self.get_score_sum() > other.get_score_sum()
+    
+    def __str__(self):
+        return f'{self.first_name} {self.last_name} {self.team} {self.birth_year}'
+    
+    def __repr__(self):
+        return f'{self.first_name} {self.last_name} {self.team} {self.birth_year}'
+    
+    def __add__(self, other):
+        return self.get_score_sum() + other.get_score_sum()
+    
+    def __sub__(self, other):
+        return self.get_score_sum() - other.get_score_sum()
+    
+    def __mul__(self, other):
+        return self.get_score_sum() * other.get_score_sum()
+    
+    def __truediv__(self, other):
+        return self.get_score_sum() / other.get_score_sum()
+    
+    def __floordiv__(self, other):
+        return self.get_score_sum() // other.get_score_sum()
+    
+    def __mod__(self, other):
+        return self.get_score_sum() % other.get_score_sum()
+    
+    def __pow__(self, other):
+        return self.get_score_sum() ** other.get_score_sum()
+    
+    def __and__(self, other):
+        return self.get_score_sum() & other.get_score_sum()
+    
+    def __or__(self, other):
+        return self.get_score_sum() | other.get_score_sum()
         
         
         
@@ -26,7 +67,7 @@ print(virat.last_name)
 print(virat.team)
 print(virat.birth_year)
 print(virat.scores)
-virat.scores.append(45)
+virat.scores.append(100)
 virat.scores.append(78)
 virat.scores.append(12)
 virat.scores.append(8)
@@ -49,5 +90,14 @@ print(f'Yuvraj age: {yuvraj.get_age()}')
 print(f'Yuvraj total score: {yuvraj.get_score_sum()}')
 
  
+#Operator overloading
+print(virat + yuvraj)
+print(virat - yuvraj)
+print(virat * yuvraj)
+print(virat / yuvraj)
+print(virat // yuvraj)
+print(virat % yuvraj)
+print(virat<yuvraj)
+print(virat>yuvraj)
 
 
