@@ -7,6 +7,7 @@ c.  insert
 d.  bank
 
 Q2.
+
 Suppose you have created a multiply() function in a file calculate.py. You need to use that multiply function inside your other python program. How will you import and use it?
 
 
